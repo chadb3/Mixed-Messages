@@ -11,9 +11,8 @@ console.log(welcome);
 // | will return a random number between    |
 // | 0 and 51                               |
 // |________________________________________|
-// This is an easy function to call when needing a random number
-// without having to type out the full chain each time.
-// Standard function to generate Random Number
+// This is an easy function to call when needing an unsecure random number
+// without having to type out the "full chain" of "Math." function calls each time.
 // Default Parameter is 10 such that getRandom() === getRandom(10)
 // Default parameter may change and is a place holder at this point
 // Math.floor(Math.random()*(MaxNumber); // is the standard way to generate a random number. MaxNumber is the max value.
