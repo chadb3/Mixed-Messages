@@ -21,11 +21,17 @@ const getRandom=(maxNum=10)=>
  return Math.floor(Math.random()*maxNum);
 }
 
-// Test Functions
-// Generate Random Number (Default parameter (10))
-console.log(getRandom());
-// Generate Random Number 2 (Default parameter (10))
-console.log(getRandom());
-// Generate Random Number 3 (input 999);
-console.log(getRandom(999));
+//// Test Functions
+//// Generate Random Number (Default parameter (10))
+//console.log(getRandom());
+//// Generate Random Number 2 (Default parameter (10))
+//console.log(getRandom());
+//// Generate Random Number 3 (input 999);
+//console.log(getRandom(999));
 
+
+const randA = ["First Set of Random to Build From"];
+const randB = ["Second Set of Random to Build From"];
+const randC = ["Third Set of Random to Build From"];
+
+console.log(randA[getRandom(randA.length)]);
