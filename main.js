@@ -20,7 +20,6 @@ const getRandom=(maxNum=10)=>
 {
  return Math.floor(Math.random()*maxNum);
 }
-
 //// Test Functions
 //// Generate Random Number (Default parameter (10))
 //console.log(getRandom());
@@ -29,9 +28,14 @@ const getRandom=(maxNum=10)=>
 //// Generate Random Number 3 (input 999);
 //console.log(getRandom(999));
 
+// Function to select a random element to reduce the amount of typing ".length"
+const getRandElem=(listIn)=>{
+ return listIn[getRandom(listIn.length)];
+}
 
 const randA = ["First Set of Random to Build From"];
 const randB = ["Second Set of Random to Build From"];
 const randC = ["Third Set of Random to Build From"];
 
 console.log(randA[getRandom(randA.length)]);
+console.log(getRandElem(randA));
