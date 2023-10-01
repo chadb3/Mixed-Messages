@@ -83,11 +83,18 @@ const randB = [
 //console.log(getRandom2());
 // Start with Random Greeting
 console.log(`\nRandom Greeting: ${getRandElem(randA)}\n`);
+// get index of random quote
 const quoteIndex=getRandom(randB.length);
+// get and store the quote
 const quote=randB[quoteIndex];
 //console.log(quoteIndex);
+// log the quote to the screen
 console.log(`Fact or Quote: ${quote}`);
+// get array of words from the quote
 const randWordOfQuote=splitStringGetWord(quote);
+// log a random word from the list to the screen.
 console.log(`\nRandom Word from above \"fact or quote\": ${getRandElem(randWordOfQuote)}\n`);
 const randomNumber = getRandom2(quoteIndex,quote.length);
+// log a random number to the screen
+// number is between the quoteIndex and the lenght of the quote.
 console.log(`Random number between ${quoteIndex} and ${quote.length}: ${randomNumber}`);
